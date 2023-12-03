@@ -22,8 +22,9 @@ const MoviesDetails = () => {
 
   return (
     <>
-      <h1>{currentMovie.title}</h1>
       <Button />
+      <h1>{currentMovie.title}</h1>
+
       <ul>
         <li>
           <h4>Genres</h4>

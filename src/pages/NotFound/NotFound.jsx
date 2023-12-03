@@ -1,10 +1,12 @@
 import React from 'react';
 import './NotFound.module.css';
+// import notfoundimg from './images/notfoundimg.webp';
 
 function NotFound() {
   return (
-    <div>
+    <div className="not-found-page">
       <h1 className="not-found-heading">Not Found....</h1>
+      {/* <img src={notfoundimg} alt=""></img> */}
       <p className="notFoundMessage">Sorry! Please try found another movie!</p>
       <form className="SearchForm">
         <button type="submit" className="SearchForm-button">

@@ -18,20 +18,24 @@ const Reviews = () => {
   }, []);
 
   return (
-    <ul>
-      {reviewsData.length === 0 ? (
-        <li>There are no reviews in the TMDB database for this film.</li>
-      ) : (
-        reviewsData.map((review, idx) => (
-          <li key={idx}>
-            <h4>Author</h4>
-            <p>{review.author}</p>
-            <h4>Review</h4>
-            <h5>{review.content}</h5>
+    <div className="reviews">
+      <ul className="reviews-ul">
+        {reviewsData.length === 0 ? (
+          <li className="reviews-list">
+            There are no reviews in the TMDB database for this film.
           </li>
-        ))
-      )}
-    </ul>
+        ) : (
+          reviewsData.map((review, idx) => (
+            <li key={idx}>
+              <h4>Author</h4>
+              <p className="reviews-p">{review.author}</p>
+              <h4>Review</h4>
+              <h5 className="reviews-h5">{review.content}</h5>
+            </li>
+          ))
+        )}
+      </ul>
+    </div>
   );
 };
 
