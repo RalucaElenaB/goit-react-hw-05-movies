@@ -40,7 +40,7 @@ const Movies = () => {
   };
 
   return (
-    <div>
+    <div className="movie-page">
       <Button />
       <h1>Movie Search</h1>
       <MovieForm

@@ -23,7 +23,7 @@ const MoviesDetails = () => {
   return (
     <>
       <Button />
-      <h1>{currentMovie.title}</h1>
+      <h1 className="movie-h1">{currentMovie.title}</h1>
 
       <ul>
         <li>
