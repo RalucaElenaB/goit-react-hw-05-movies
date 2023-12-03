@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { getTrending } from './api';
+import { getTrending } from './ApiHome';
 import { Link } from 'react-router-dom';
 import './Home.module.css';
 

@@ -1,0 +1,10 @@
+.not-found-heading {
+  text-align: center;
+  font-size: 24px;
+  text-wrap: 25px;
+  color: rgb(229, 122, 0);
+}
+
+.notFoundMessage {
+  color: rgb(237, 150, 51);
+}
