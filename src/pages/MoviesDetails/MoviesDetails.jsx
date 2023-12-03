@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams, Outlet } from 'react-router-dom';
 import { getMovieDetails } from './ApiMoviesDetails';
 import { useLocation } from 'react-router-dom';
+import Button from 'common/Button/Button';
 
 <Link to="/Home">Back</Link>;
 
@@ -22,6 +23,7 @@ const MoviesDetails = () => {
   return (
     <>
       <h1>{currentMovie.title}</h1>
+      <Button />
       <ul>
         <li>
           <h4>Genres</h4>

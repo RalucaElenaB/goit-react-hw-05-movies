@@ -19,7 +19,7 @@ const Cast = () => {
   }, []);
 
   return (
-    <>
+    <div className="cast-section">
       <ul>
         {castData.length === 0 ? (
           <p>
@@ -42,7 +42,7 @@ const Cast = () => {
           ))
         )}
       </ul>
-    </>
+    </div>
   );
 };
 

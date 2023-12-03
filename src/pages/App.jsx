@@ -20,7 +20,7 @@ export const App = () => {
   return (
     <>
       <div>
-        <nav>
+        <nav className="navigation nav-links">
           <Link to="/">Home</Link>
           <Link to="/movies">Movies</Link>
         </nav>

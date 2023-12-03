@@ -1,5 +1,11 @@
+import { InfinitySpin } from 'react-loader-spinner';
+
 const Loader = () => {
-  return <div>Loading...</div>;
+  return (
+    <div className="Center">
+      <InfinitySpin width="350" color="#3f51b5" />
+    </div>
+  );
 };
 
 export default Loader;
