@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getSearch } from 'pages/Movies/ApiMovies';
 import { useLocation } from 'react-router-dom';
-import Button from 'common/Button/Button';
 
 const Movies = () => {
   const [query, setQuery] = useState('');
@@ -41,7 +40,6 @@ const Movies = () => {
 
   return (
     <div className="movie-page">
-      <Button />
       <h1>Movie Search</h1>
       <MovieForm
         onSubmit={handleFormSubmit}
