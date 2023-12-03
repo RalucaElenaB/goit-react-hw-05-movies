@@ -97,6 +97,21 @@ a {
 }
 
 /* cast */
+.cast {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding: 0 5px;
+  font-size: 18px;
+  color: rgb(2, 10, 116);
+  font-weight: bold;
+  background: transparent;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgb(243, 118, 41);
+  }
+}
 .cast-section {
   display: flex;
   margin: 10px;
@@ -143,6 +158,21 @@ p {
 }
 
 /* reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding: 0 5px;
+  font-size: 18px;
+  color: rgb(2, 10, 116);
+  font-weight: bold;
+  background: transparent;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgb(243, 118, 41);
+  }
+}
 .reviews-list {
   margin: 10px;
 }

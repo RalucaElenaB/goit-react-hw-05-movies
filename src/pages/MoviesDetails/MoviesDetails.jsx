@@ -49,10 +49,10 @@ const MoviesDetails = () => {
           <p>{currentMovie.vote_count}</p>
         </li>
       </ul>
-      <Link to="cast" state={{ from: path }}>
+      <Link className="cast" to="cast" state={{ from: path }}>
         Cast
       </Link>
-      <Link to="reviews" state={{ from: path }}>
+      <Link className="reviews" to="reviews" state={{ from: path }}>
         Reviews
       </Link>
       <Outlet />

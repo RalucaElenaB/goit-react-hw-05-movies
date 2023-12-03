@@ -7,7 +7,10 @@ const MovieForm = ({ onSubmit, onChange, query }) => {
         value={query}
         onChange={onChange}
       />
-      <button aria-label="search" type="submit"></button> {/* Search button */}
+      <button aria-label="search" type="submit">
+        <span className="search">Search</span>
+      </button>{' '}
+      {/* Search button */}
     </form>
   );
 };
