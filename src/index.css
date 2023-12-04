@@ -8,7 +8,7 @@ bring in normalize.css styles * {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f4f5ff;
+  background-color: white;
   line-height: 1.5;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -50,6 +50,14 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: rgb(231, 235, 245);
+  padding: 16px;
+  max-width: 1300px;
 }
 
 /* navigation-menu */
@@ -231,4 +239,51 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* home */
+.home {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-movies-list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.home-movies-item {
+  padding: 0 10px;
+  display: flex;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  background-color: #f7f9fb;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  box-shadow: rgb(2, 10, 116) 0px 1px 4px;
+  transition: box-shadow, 0.9s;
+  &:hover,
+  &:focus {
+    box-shadow: rgba(4, 15, 226, 0.4) 5px 5px 10px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 20px;
+  }
+}
+
+.home-movies-title {
+  color: rgb(2, 10, 116);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.home-movies-img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px;
 }

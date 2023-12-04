@@ -26,21 +26,26 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="home">
       {loading && <Loader />}
-      <ul>
+      <ul className="home-movies-list">
         {trendingData.map((movie, id) => (
-          <li key={id}>
+          <li key={id} className="home-movies-item">
             <Link
               to={`./movies/${movie.id}`}
               state={{ from: location.pathname + location.search }}
             >
-              {movie.title}
+              <div className="home-movies-title">{movie.title}</div>
+              <img
+                className="home-movies-img"
+                src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
+                alt={movie.title}
+              />
             </Link>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

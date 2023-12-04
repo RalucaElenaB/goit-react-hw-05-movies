@@ -39,22 +39,27 @@ const Movies = () => {
   };
 
   return (
-    <div className="movie-page">
+    <div className="movie-page ">
       <h1>Movie Search</h1>
       <MovieForm
         onSubmit={handleFormSubmit}
         onChange={handleQueryChange}
         query={query}
       />
-      <ul>
+      <ul className="home-movies-list">
         {movies.map((movie, id) => (
-          <li key={id}>
+          <li key={id} className="home-movies-item">
             <Link
               to={`./${movie.id}`}
               state={{ from: location.pathname + location.search }}
             >
-              {movie.title}
+              <div className="home-movies-title">{movie.title}</div>
             </Link>
+            <img
+              className="home-movies-img"
+              src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
+              alt={movie.title}
+            />
           </li>
         ))}
       </ul>
