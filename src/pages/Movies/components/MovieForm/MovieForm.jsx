@@ -3,12 +3,12 @@ const MovieForm = ({ onSubmit, onChange, query }) => {
     <form onSubmit={onSubmit}>
       <input
         type="text"
-        placeholder="movie search"
+        placeholder="search a movie"
         value={query}
         onChange={onChange}
       />
       <button aria-label="search" type="submit">
-        <span className="search">Search</span>
+        <span>Search</span>
       </button>{' '}
       {/* Search button */}
     </form>

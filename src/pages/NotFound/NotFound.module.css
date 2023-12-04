@@ -1,10 +1,18 @@
-.not-found-heading {
-  text-align: center;
-  font-size: 24px;
-  text-wrap: 25px;
-  color: rgb(229, 122, 0);
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found-h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
 }
 
-.notFoundMessage {
-  color: rgb(237, 150, 51);
+.not-found-message {
+  font-size: 12px;
+  color: rgb(2, 10, 116);
+  font-weight: bold;
 }

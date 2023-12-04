@@ -46,17 +46,16 @@ const Movies = () => {
         onChange={handleQueryChange}
         query={query}
       />
-      <ul className="home-movies-list">
+      <ul>
         {movies.map((movie, id) => (
-          <li key={id} className="home-movies-item">
+          <li key={id}>
             <Link
               to={`./${movie.id}`}
               state={{ from: location.pathname + location.search }}
             >
-              <div className="home-movies-title">{movie.title}</div>
+              <div>{movie.title}</div>
             </Link>
             <img
-              className="home-movies-img"
               src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
               alt={movie.title}
             />

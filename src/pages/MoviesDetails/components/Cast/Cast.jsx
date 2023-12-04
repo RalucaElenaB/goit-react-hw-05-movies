@@ -19,7 +19,7 @@ const Cast = () => {
   }, []);
 
   return (
-    <div className="cast-section">
+    <>
       <ul>
         {castData.length === 0 ? (
           <p>
@@ -37,12 +37,12 @@ const Cast = () => {
                 alt={cast.name ? cast.original_name : 'Actor coming soon'}
               />
               <h3>{cast.name}</h3>
-              <p>{cast.character}</p>
+              <p className="reviews-p">{cast.character}</p>
             </li>
           ))
         )}
       </ul>
-    </div>
+    </>
   );
 };
 

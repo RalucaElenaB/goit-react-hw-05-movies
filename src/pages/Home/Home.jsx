@@ -27,10 +27,11 @@ const Home = () => {
 
   return (
     <div className="home">
+      <h1 className="home-h1">Today's Trending Movies</h1>
       {loading && <Loader />}
-      <ul className="home-movies-list">
+      <ul className="home-ul">
         {trendingData.map((movie, id) => (
-          <li key={id} className="home-movies-item">
+          <li key={id} className="home-li">
             <Link
               to={`./movies/${movie.id}`}
               state={{ from: location.pathname + location.search }}

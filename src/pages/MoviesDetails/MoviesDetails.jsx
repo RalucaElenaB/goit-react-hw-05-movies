@@ -21,9 +21,9 @@ const MoviesDetails = () => {
   }, [movieId]);
 
   return (
-    <>
+    <div className="home">
       <Button />
-      <h1 className="movie-h1">{currentMovie.title}</h1>
+      <h1 className="movies-details-h1">{currentMovie.title}</h1>
 
       <ul>
         <li>
@@ -56,7 +56,7 @@ const MoviesDetails = () => {
         Reviews
       </Link>
       <Outlet />
-    </>
+    </div>
   );
 };
 
