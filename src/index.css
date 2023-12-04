@@ -58,6 +58,7 @@ a {
   background: rgb(231, 235, 245);
   padding: 16px;
   max-width: 1300px;
+  height: 200vh;
 }
 
 /* navigation-menu */
