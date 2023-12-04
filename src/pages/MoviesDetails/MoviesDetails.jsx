@@ -24,7 +24,11 @@ const MoviesDetails = () => {
     <div className="home">
       <Button />
       <h1 className="movies-details-h1">{currentMovie.title}</h1>
-
+      <img
+        className="movies-details-img"
+        src={'https://image.tmdb.org/t/p/w500' + currentMovie.poster_path}
+        alt={currentMovie.title}
+      />
       <ul>
         <li>
           <h4>Genres</h4>
